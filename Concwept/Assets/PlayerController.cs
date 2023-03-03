@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     private Vector2 move;
 
+
     public void OnMove(InputAction.CallbackContext context) 
     {
         move = context.ReadValue<Vector2>();
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     {
         movePlayer();
     }
+    
     public void movePlayer()
     {
         Vector3 movement = new Vector3(move.x, 0f, move.y);
